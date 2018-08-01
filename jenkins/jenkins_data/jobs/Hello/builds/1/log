@@ -1,0 +1,82 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/Hello/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins7968152534125562510.sh
++ echo  Hello there
+ Hello there
++ mvn --version
+Apache Maven 3.3.9
+Maven home: /usr/share/maven
+Java version: 1.8.0_171, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "4.9.93-boot2docker", arch: "amd64", family: "unix"
+[workspace] $ mvn -f /var/jenkins_home/jobs/Hello/workspace/pom.xml -e -B sonar:sonar -Dsonar.host.url=http://sonar:9000
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM /var/jenkins_home/jobs/Hello/workspace/pom.xml: /var/jenkins_home/jobs/Hello/workspace/pom.xml (No such file or directory) @ 
+ @ 
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] The build could not read 1 project -> [Help 1]
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM /var/jenkins_home/jobs/Hello/workspace/pom.xml: /var/jenkins_home/jobs/Hello/workspace/pom.xml (No such file or directory) @ 
+
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:422)
+	at org.apache.maven.graph.DefaultGraphBuilder.collectProjects(DefaultGraphBuilder.java:419)
+	at org.apache.maven.graph.DefaultGraphBuilder.getProjectsForMavenReactor(DefaultGraphBuilder.java:410)
+	at org.apache.maven.graph.DefaultGraphBuilder.build(DefaultGraphBuilder.java:83)
+	at org.apache.maven.DefaultMaven.buildGraph(DefaultMaven.java:491)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:219)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   The project  (/var/jenkins_home/jobs/Hello/workspace/pom.xml) has 1 error
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]     Non-readable POM /var/jenkins_home/jobs/Hello/workspace/pom.xml: /var/jenkins_home/jobs/Hello/workspace/pom.xml (No such file or directory)
+java.io.FileNotFoundException: /var/jenkins_home/jobs/Hello/workspace/pom.xml (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.apache.maven.building.FileSource.getInputStream(FileSource.java:53)
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:533)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:273)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:469)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:438)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:402)
+	at org.apache.maven.graph.DefaultGraphBuilder.collectProjects(DefaultGraphBuilder.java:419)
+	at org.apache.maven.graph.DefaultGraphBuilder.getProjectsForMavenReactor(DefaultGraphBuilder.java:410)
+	at org.apache.maven.graph.DefaultGraphBuilder.build(DefaultGraphBuilder.java:83)
+	at org.apache.maven.DefaultMaven.buildGraph(DefaultMaven.java:491)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:219)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4LqY/bqJYLoKt7mebp7f88JArauyNMonzlgy8OUdBI/nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succedeed?
+SonarQube analysis completed: FAILURE
+Build step 'SonarQube analysis with Maven' changed build result to FAILURE
+Build step 'SonarQube analysis with Maven' marked build as failure
+Finished: FAILURE
