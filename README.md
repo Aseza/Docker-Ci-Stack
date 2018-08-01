@@ -9,8 +9,8 @@ once the dependencies are downloaded, you can visit the servers with the designt
 2. Nexus : 19001
 3. SonarQube : 19000
 
-the server address is the default docker machine IP created by the VM.
+the server address is the default docker machine IP created by the VM (*default : 192.168.99.100*).
 
-Then make sure the jobs directory has Jenkins permissions and NOT root.
+**Then make sure the jobs directory has Jenkins permissions and NOT root**.
 
 PS : There is a shared folder called Jobs inside jenkins/jenkins-data; it was made for consistency so jobs arent lost when containers are destroyed.
