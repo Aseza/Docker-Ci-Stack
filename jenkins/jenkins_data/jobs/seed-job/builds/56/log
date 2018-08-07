@@ -1,0 +1,18 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+list of folders are [/home/git/projects/Ang0, /home/git/projects/Ang1, /home/git/projects/Ang2, /home/git/projects/Ang3, /home/git/projects/Ang4]
+size of the list is 5
+Class of 1st element class java.lang.String
+the Git URL is file:///home/git/projects/Generated - Ang0
+the Git URL is file:///home/git/projects/Generated - Ang1
+the Git URL is file:///home/git/projects/Generated - Ang2
+the Git URL is file:///home/git/projects/Generated - Ang3
+the Git URL is file:///home/git/projects/Generated - Ang4
+Existing items:
+    GeneratedJob{name='Generated - Ang0'}
+    GeneratedJob{name='Generated - Ang1'}
+    GeneratedJob{name='Generated - Ang2'}
+    GeneratedJob{name='Generated - Ang3'}
+    GeneratedJob{name='Generated - Ang4'}
+Finished: SUCCESS

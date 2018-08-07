@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+ERROR: startup failed:
+script: 10: expecting anything but ''\n''; got it anyway @ line 10, column 37.
+         println "Hello " + "file://+it
+                                       ^
+
+1 error
+
+Finished: FAILURE

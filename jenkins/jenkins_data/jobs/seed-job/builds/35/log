@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+list of folders are [/home/git/projects/Ang0, /home/git/projects/Ang1, /home/git/projects/Ang2, /home/git/projects/Ang3, /home/git/projects/Ang4]
+size of the list is 5
+Class of 1st element class java.lang.String
+ERROR: (script, line 8) No signature of method: script.$() is applicable for argument types: (script$_run_closure1$_closure2) values: [script$_run_closure1$_closure2@7a0635f6]
+Possible solutions: is(java.lang.Object), run(), run(), any(), job(java.lang.String), use([Ljava.lang.Object;)
+Finished: FAILURE

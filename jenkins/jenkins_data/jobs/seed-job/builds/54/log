@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+list of folders are [/home/git/projects/Ang0, /home/git/projects/Ang1, /home/git/projects/Ang2, /home/git/projects/Ang3, /home/git/projects/Ang4]
+size of the list is 5
+Class of 1st element class java.lang.String
+ERROR: (script, line 11) No signature of method: javaposse.jobdsl.dsl.helpers.ScmContext.$() is applicable for argument types: (script$_run_closure1$_closure2$_closure3$_closure5) values: [script$_run_closure1$_closure2$_closure3$_closure5@c54850]
+Possible solutions: hg(java.lang.String), is(java.lang.Object), any(), git(groovy.lang.Closure), git(java.lang.String), hg(java.lang.String, groovy.lang.Closure)
+Finished: FAILURE

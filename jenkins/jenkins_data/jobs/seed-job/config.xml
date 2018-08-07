@@ -13,16 +13,19 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.70">
-      <scriptText>def count = new File(&quot;/home/git/projects&quot;).listFiles().size()
-println count
+      <scriptText>def list = new File(&quot;/home/git/projects&quot;).listFiles()
+println &quot;list of folders are &quot;+list
+println &quot;size of the list is &quot;+ list.size()
+println &quot;Class of 1st element &quot;+ list[0].name.getClass()
 
-for (i = 0; i &lt;count; i++) {
- job(&quot;DSL-${i}&quot;) {
+
+list.each {
+  def projectName = it.name
+  def gitUrl = &quot;file:///home/git/projects/${it.name}&quot;
+  job(&quot;Generated - ${projectName}&quot;) {
+    println &quot;the Git URL is &quot; + gitUrl
     scm {
-      git(&quot;file:///home/git/projects/Ang${i}&quot;)
-    }
-    triggers {
-        //scm(&apos;H/15 * * * *&apos;)
+      git(gitUrl)
     }
     steps {
         maven(&apos;-e clean test&apos;)

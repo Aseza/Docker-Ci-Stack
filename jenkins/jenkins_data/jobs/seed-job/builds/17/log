@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+[/home/git/projects/Ang0, /home/git/projects/Ang1, /home/git/projects/Ang2, /home/git/projects/Ang3, /home/git/projects/Ang4]
+ERROR: Could not create item, unknown parent path in "/home/git/projects/Ang0"
+Finished: FAILURE

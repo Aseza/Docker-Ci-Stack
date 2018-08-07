@@ -1,0 +1,8 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+[/home/git/projects/Ang0, /home/git/projects/Ang1, /home/git/projects/Ang2, /home/git/projects/Ang3, /home/git/projects/Ang4]
+size is 5
+ERROR: (script, line 6) No signature of method: script.job() is applicable for argument types: (java.io.File, script$_run_closure1$_closure2) values: [/home/git/projects/Ang0, script$_run_closure1$_closure2@5366f483]
+Possible solutions: job(java.lang.String), job(java.lang.String, groovy.lang.Closure), run(), run(), any(), run(java.io.File, [Ljava.lang.String;)
+Finished: FAILURE

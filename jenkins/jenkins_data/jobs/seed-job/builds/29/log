@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+[/home/git/projects/Ang0, /home/git/projects/Ang1, /home/git/projects/Ang2, /home/git/projects/Ang3, /home/git/projects/Ang4]
+size is 5
+Added items:
+    GeneratedJob{name='Ang0'}
+    GeneratedJob{name='Ang1'}
+    GeneratedJob{name='Ang2'}
+    GeneratedJob{name='Ang3'}
+    GeneratedJob{name='Ang4'}
+Unreferenced items:
+    GeneratedJob{name='HELLO'}
+Finished: SUCCESS
