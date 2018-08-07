@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+5
+ERROR: (script, line 5) No such property: it for class: script
+Possible solutions: jm
+Finished: FAILURE

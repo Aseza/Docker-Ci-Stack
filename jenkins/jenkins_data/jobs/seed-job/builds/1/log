@@ -1,0 +1,4 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+ERROR: no Job DSL script(s) found at job('DSL-Tutorial-1-Test') {
+Finished: FAILURE

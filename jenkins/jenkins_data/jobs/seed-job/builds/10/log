@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+5
+ERROR: (script, line 3) No signature of method: script.$() is applicable for argument types: (script$_run_closure1) values: [script$_run_closure1@58375dc7]
+Possible solutions: is(java.lang.Object), run(), run(), any(), job(java.lang.String), any(groovy.lang.Closure)
+Finished: FAILURE

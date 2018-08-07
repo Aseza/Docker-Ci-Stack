@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+5
+Existing items:
+    GeneratedJob{name='DSL-0'}
+    GeneratedJob{name='DSL-1'}
+    GeneratedJob{name='DSL-2'}
+    GeneratedJob{name='DSL-3'}
+    GeneratedJob{name='DSL-4'}
+Finished: SUCCESS

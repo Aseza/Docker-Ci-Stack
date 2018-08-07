@@ -1,0 +1,49 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.18">
+      <configDates>
+        <string>2018-08-07_09-48-59</string>
+        <string>2018-08-07_09-46-11</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+    <javaposse.jobdsl.plugin.actions.GeneratedJobsBuildAction plugin="job-dsl@1.70">
+      <modifiedObjects class="linked-hash-set">
+        <javaposse.jobdsl.dsl.GeneratedJob>
+          <jobName>DSL-5</jobName>
+        </javaposse.jobdsl.dsl.GeneratedJob>
+      </modifiedObjects>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.actions.GeneratedJobsBuildAction>
+    <javaposse.jobdsl.plugin.actions.GeneratedViewsBuildAction plugin="job-dsl@1.70">
+      <modifiedObjects class="linked-hash-set"/>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.actions.GeneratedViewsBuildAction>
+    <javaposse.jobdsl.plugin.actions.GeneratedConfigFilesBuildAction plugin="job-dsl@1.70">
+      <modifiedObjects class="linked-hash-set"/>
+    </javaposse.jobdsl.plugin.actions.GeneratedConfigFilesBuildAction>
+    <javaposse.jobdsl.plugin.actions.GeneratedUserContentsBuildAction plugin="job-dsl@1.70">
+      <modifiedObjects class="linked-hash-set"/>
+    </javaposse.jobdsl.plugin.actions.GeneratedUserContentsBuildAction>
+  </actions>
+  <queueId>35</queueId>
+  <timestamp>1533635342819</timestamp>
+  <startTime>1533635342832</startTime>
+  <result>SUCCESS</result>
+  <duration>440</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/jobs/seed-job/workspace</workspace>
+  <hudsonVersion>2.121.2</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

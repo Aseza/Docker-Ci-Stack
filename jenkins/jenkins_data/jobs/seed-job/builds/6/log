@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+Building in workspace /var/jenkins_home/jobs/seed-job/workspace
+Processing provided DSL script
+50
+Added items:
+    GeneratedJob{name='DSL-Tutorial-1-Test-3'}
+Unreferenced items:
+    GeneratedJob{name='DSL-Tutorial-1-Test-2'}
+Finished: SUCCESS

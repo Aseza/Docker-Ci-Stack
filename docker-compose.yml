@@ -27,6 +27,7 @@ services:
       - prodnetwork
     volumes:
       - ./jenkins/jenkins_data/jobs/:/var/jenkins_home/jobs
+      - ./jenkins/jenkins_data/projects/:/home/git/projects
       - /var/run/docker.sock:/var/run/docker.sock
       - /usr/bin/docker:/usr/bin/docker
       - jenkins-data:/var/lib/jenkins/
